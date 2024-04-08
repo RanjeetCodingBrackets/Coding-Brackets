@@ -13,7 +13,6 @@ const navLinks: { id: number; link: string; href: string }[] = [
 
 const NavBar = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <nav className="border-b border-gray-40000 bg-[#F5F8FF]">
@@ -22,7 +21,7 @@ const NavBar = () => {
           <Link href="/">
             <CodingBracketsLogo />
           </Link>
-          <ul className="flex space-x-20 items-center font-bold text-[#8591AF] text-xl text-center pt-3">
+          <ul className="flex space-x-16 items-center font-bold text-[#8591AF] text-xl text-center pt-3">
             {navLinks.map((navItem) => (
               <li
                 key={navItem.id}
