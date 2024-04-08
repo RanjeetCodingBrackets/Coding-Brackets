@@ -2,15 +2,19 @@
 
 import Link from "next/link";
 import CodingBracketsLogo from "./svg/CodingBracketsLogo";
+import { usePathname } from "next/navigation";
 
 const navLinks: { id: number; link: string; href: string }[] = [
-  { id: 1, link: "Home", href: "" },
+  { id: 1, link: "Home", href: "/" },
   { id: 2, link: "Services", href: "" },
   { id: 3, link: "Contact us", href: "" },
   { id: 4, link: "Testimonials", href: "" },
 ];
 
 const NavBar = () => {
+  const pathname = usePathname();
+  console.log(pathname);
+
   return (
     <nav className="border-b border-gray-40000 bg-[#F5F8FF]">
       <div className="container mx-auto flex w-full justify-between py-1">
@@ -22,7 +26,10 @@ const NavBar = () => {
             {navLinks.map((navItem) => (
               <li
                 key={navItem.id}
-                className="hover:text-gray-900 transition-all ease-in-out"
+                className={
+                  "hover:text-[#000333] transition-all ease-in-out " +
+                  (navItem.href === pathname ? "text-[#000333]" : "")
+                }
               >
                 <Link href={navItem.href}>{navItem.link}</Link>
               </li>
@@ -30,7 +37,7 @@ const NavBar = () => {
           </ul>
         </div>
 
-        <button className="w-fit h-fit my-auto rounded-xl text-white px-8 py-4 bg-[#0788A5] font-semibold text-xl hover:bg-transparent hover:text-[#0788A5] hover:ring-1 hover:ring-[#0788A5] transition-all ease-in-out">
+        <button className="w-fit h-fit my-auto rounded-xl text-white px-8 py-3 bg-[#0788A5] font-semibold text-xl hover:bg-transparent hover:text-[#0788A5] hover:ring-1 hover:ring-[#0788A5] transition-all ease-in-out">
           Free Quote!
         </button>
       </div>
