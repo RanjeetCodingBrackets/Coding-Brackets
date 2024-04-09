@@ -51,9 +51,11 @@ const Footer = () => {
               {socials.map((social) => (
                 <li
                   key={social.id}
-                  className="bg-[#0788A5] text-white p-2 rounded-xl flex items-center justify-center align-middle"
+                  className="bg-[#0788A5] text-white p-2 rounded-xl flex items-center justify-center align-middle hover:text-[#0788A5] hover:bg-transparent hover:ring-1 hover:ring-[#0788A5] transition-all ease-in-out"
                 >
-                  <Link href={social.href}>{social.Icon}</Link>
+                  <Link href={social.href} target="_blank">
+                    {social.Icon}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -61,16 +63,46 @@ const Footer = () => {
           {/* Column One end. */}
 
           {/* Column two start */}
-          <div className="flex flex-col w-full items-center align-middle">
-            <h4 className="text-[#000333] font-bold text-lg">Company</h4>
+          <div className="w-full h-full flex align-middle justify-end">
+            <ul className="flex flex-col w-1/2 h-full pt-5 pb-14 align-middle justify-around">
+              <h4 className="text-[#000333] font-bold text-lg">Company</h4>
+              {companyLinks.map((link) => (
+                <li
+                  className="text-[#7A7A7A] font-normal text-base hover:text-[#0788A5] hover:font-medium transition-all ease-in-out"
+                  key={link.id}
+                >
+                  <Link href={link.href} target="_blank">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
           {/* Column two end */}
 
           {/* Column Three start */}
-          <div className="flex flex-col">col 3</div>
+          <div className="flex justify-end">
+            <ul className="flex flex-col w-1/2 h-full pt-5 pb-14 align-middle justify-around">
+              <h4 className="text-[#000333] font-bold text-lg">Locations</h4>
+              {contacts.map((link) => (
+                <li
+                  key={link.id}
+                  className="text-[#7A7A7A] font-normal text-base"
+                >
+                  <div className="flex flex-col space-y-2">
+                    <h6 className="text-black font-medium text-base">
+                      {link.heading}:
+                    </h6>
+                    <p>{link.details}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
           {/* Clumn Three end. */}
         </div>
       </div>
+
       <div className="bg-[#E3E9F5]">
         <div className="container mx-auto font-medium text-base text-black py-3">
           © 2015 - 2023 QLOUDIN Technologies Pvt Ltd. All Rights Reserved
