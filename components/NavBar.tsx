@@ -26,7 +26,7 @@ const NavBar = () => {
               <li
                 key={navItem.id}
                 className={
-                  "hover:text-[#000333] transition-all ease-in-out " +
+                  "hover:text-[#0788A5] transition-all ease-in-out " +
                   (navItem.href === pathname ? "text-[#000333]" : "")
                 }
               >

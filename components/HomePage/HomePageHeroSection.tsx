@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { BiSolidPhoneCall } from "react-icons/bi";
-import HeroVector from "./svg/HeroVector";
+import HeroVector from "../svg/HeroVector";
 
 const HomePageHeroSection = () => {
   return (
