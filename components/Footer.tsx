@@ -43,8 +43,8 @@ const Footer = () => {
 
             <p className="text-[#7A7A7A] font-medium text-xl">
               Connect with CodingBrackets{"–"} Your Trusted Web Development
-              Partner 🌐 | Let's turn your digital dreams into reality. Contact
-              us for cutting-edge web solutions and tech expertise. 💻 |
+              Partner 🌐 | Let&apos;s turn your digital dreams into reality.
+              Contact us for cutting-edge web solutions and tech expertise. 💻 |
             </p>
 
             <ul className="flex space-x-5">

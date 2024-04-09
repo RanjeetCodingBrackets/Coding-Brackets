@@ -32,7 +32,7 @@ const AboutCompanyPage = () => {
             <p className="text-[#7A7A7A] font-medium text-xl pr-20">
               CodingBrackets is a leading web development services provider.
               With a dedicated team, we craft visually appealing, user-friendly
-              websites that drive success for businesses in the online world."
+              websites that drive success for businesses in the online world.
             </p>
 
             <button className="flex px-5 py-3 rounded-xl justify-center items-center align-middle text-white font-bold text-xl bg-[#000333] text- max-w-fit hover:bg-transparent hover:text-[#000333] hover:ring-1 hover:ring-[#000333] transition-all ease-in-out">
