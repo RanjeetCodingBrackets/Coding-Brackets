@@ -1,5 +1,6 @@
 import AboutCompanyPage from "@/components/HomePage/AboutCompany";
 import HomePageHeroSection from "@/components/HomePage/HomePageHeroSection";
+import ServiceFeaturesPage from "@/components/HomePage/ServiceFeatures";
 import ServicesPage from "@/components/HomePage/Services";
 
 export default function Home() {
@@ -10,6 +11,8 @@ export default function Home() {
       <AboutCompanyPage />
 
       <ServicesPage />
+
+      <ServiceFeaturesPage />
 
       <div className="h-screen"></div>
     </main>
