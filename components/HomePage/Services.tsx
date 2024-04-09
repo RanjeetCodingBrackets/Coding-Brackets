@@ -1,10 +1,9 @@
 import { ReactNode } from "react";
 import { FaWordpressSimple } from "react-icons/fa6";
-import { IoHome } from "react-icons/io5";
-import { GoLaw } from "react-icons/go";
-import { SiYourtraveldottv } from "react-icons/si";
-import { IoSchoolSharp } from "react-icons/io5";
 import { GiShoppingCart } from "react-icons/gi";
+import { GoLaw } from "react-icons/go";
+import { IoHome, IoSchoolSharp } from "react-icons/io5";
+import { SiYourtraveldottv } from "react-icons/si";
 
 const services: {
   id: number;
@@ -87,7 +86,7 @@ const ServicesPage = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="flex flex-col group space-y-5 text-center align-middle justify-center items-center bg-white py-12 px-7 rounded-2xl border border-gray-100 shadow-sm hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-300 transition-all ease-in-out"
+              className="flex flex-col group space-y-5 text-center align-middle justify-center items-center bg-white py-12 px-7 rounded-2xl border border-gray-100 shadow-md hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-300 transition-all ease-in-out"
             >
               <div
                 className="p-5 flex align-middle justify-center items-center rounded-full"
@@ -96,11 +95,11 @@ const ServicesPage = () => {
                 {service.Icon}
               </div>
 
-              <h4 className="text-[#000333] font-semibold text-xl align-middle">
+              <h4 className="text-[#000333] font-semibold text-center text-xl align-middle">
                 {service.title}
               </h4>
 
-              <p className="text-[#7A7A7A] font-medium text-base align-middle">
+              <p className="text-[#7A7A7A] font-medium text-center text-base align-middle">
                 {service.dscription}
               </p>
             </div>
