@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+::selection {
+  color: #ffff;
+  background: #fe765d;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #0788a5;
+}
+::-webkit-scrollbar-track {
+  background: #bafaff;
+}
+
 .footer-skewed {
   clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 0% 21%);
 }
