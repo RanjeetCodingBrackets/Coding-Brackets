@@ -1,8 +1,10 @@
 import AboutCompanyPage from "@/components/HomePage/AboutCompany";
 import ContactFormSection from "@/components/HomePage/ContactForm";
+import CustomerReviewsSection from "@/components/HomePage/CustomerReviews";
 import HomePageHeroSection from "@/components/HomePage/HomePageHeroSection";
 import ServiceFeaturesPage from "@/components/HomePage/ServiceFeatures";
 import ServicesPage from "@/components/HomePage/Services";
+import { redirect } from "next/navigation";
 
 export default function Home() {
   return (
@@ -16,6 +18,8 @@ export default function Home() {
       <ServiceFeaturesPage />
 
       <ContactFormSection />
+
+      <CustomerReviewsSection />
 
       <div className="h-screen"></div>
     </main>
