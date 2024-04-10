@@ -6,7 +6,7 @@ import ServicesPage from "@/components/HomePage/Services";
 
 export default function Home() {
   return (
-    <main>
+    <main className="max-w-[100vw] overflow-x-hidden">
       <HomePageHeroSection />
 
       <AboutCompanyPage />
