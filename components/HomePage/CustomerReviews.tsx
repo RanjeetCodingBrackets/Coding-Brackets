@@ -48,14 +48,17 @@ const CustomerReviewsSection = () => {
         </h2>
       </div>
 
-      <div className="flex justify-between align-middle items-center w-full py-12">
+      <div className="flex justify-between align-middle items-center w-full py-16">
         <div className="border border-[#0788A5] rounded-full p-4 flex align-middle justify-center items-center cursor-pointer group hover:bg-[#0788A5] hover:text-white transition-all ease-in-out">
           <FaAngleLeft className="w-6 h-6 text-[#0788A5] group-hover:text-white" />
         </div>
 
         <div className="flex flex-grow space-x-5 justify-evenly align-middle items-center mx-5">
           {reviews.map((review) => (
-            <div className="flex flex-col space-y-6 align-middle justify-center bg-[#F8FAFC] py-8 px-8 border border-[#E7E5EA] rounded-[40px] hover:-translate-y-1 hover:shadow-lg transition-all ease-in-out">
+            <div
+              key={review.id}
+              className="flex flex-col space-y-6 align-middle justify-center bg-[#F8FAFC] py-8 px-8 border border-[#E7E5EA] rounded-[40px] hover:-translate-y-1 hover:shadow-lg transition-all ease-in-out"
+            >
               <div className="flex space-x-5 align-middle justify-start">
                 <div className="">
                   <Image
@@ -97,6 +100,8 @@ const CustomerReviewsSection = () => {
           <FaAngleRight className="w-6 h-6 text-[#0788A5] group-hover:text-white" />
         </div>
       </div>
+
+      <div className="h-[3px] w-[75%] bg-[#F0EFEF] mx-auto"></div>
     </section>
   );
 };
