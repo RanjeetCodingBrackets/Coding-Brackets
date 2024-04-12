@@ -2,7 +2,7 @@ import React from "react";
 
 const GetInTouchSection = () => {
   return (
-    <section className="container mx-auto px-[210px] my-28">
+    <section className="container mx-auto px-[210px] mt-28 mb-20">
       <div
         className="flex flex-col space-y-5 align-middle justify-around items-center p-10 bg-cover bg-no-repeat bg-center rounded-3xl"
         style={{ backgroundImage: "url(/GetInTouchBg.png)" }}

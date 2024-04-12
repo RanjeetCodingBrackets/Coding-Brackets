@@ -4,6 +4,7 @@ import CustomerReviewsSection from "@/components/HomePage/CustomerReviews";
 import FAQSection from "@/components/HomePage/FAQ";
 import GetInTouchSection from "@/components/HomePage/GetInTouch";
 import HomePageHeroSection from "@/components/HomePage/HomePageHeroSection";
+import PartnersSection from "@/components/HomePage/Partners";
 import ServiceFeaturesPage from "@/components/HomePage/ServiceFeatures";
 import ServicesPage from "@/components/HomePage/Services";
 
@@ -26,7 +27,9 @@ export default function Home() {
 
       <GetInTouchSection />
 
-      <div className="h-screen"></div>
+      <PartnersSection />
+
+      {/* <div className="h-screen"></div> */}
     </main>
   );
 }
