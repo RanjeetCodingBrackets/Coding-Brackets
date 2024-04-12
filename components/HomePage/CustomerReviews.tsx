@@ -57,7 +57,7 @@ const CustomerReviewsSection = () => {
           {reviews.map((review) => (
             <div
               key={review.id}
-              className="flex flex-col space-y-6 align-middle justify-center bg-[#F8FAFC] py-8 px-8 border border-[#E7E5EA] rounded-[40px] hover:-translate-y-1 hover:shadow-lg transition-all ease-in-out"
+              className="flex flex-col space-y-6 align-middle justify-center bg-[#F8FAFC] py-8 px-8 border border-[#E7E5EA] rounded-[40px] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-in-out"
             >
               <div className="flex space-x-5 align-middle justify-start">
                 <div className="">
