@@ -75,7 +75,7 @@ const CustomerReviewsSection = () => {
                   <h4 className="text-[#000333] text-2xl font-semibold">
                     {review.name}
                   </h4>
-                  <p className="text-[#A7AFC5] font-medium text-xl">
+                  <p className="text-[#A7AFC5] font-medium text-xl truncate">
                     {review.role}
                   </p>
 

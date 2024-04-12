@@ -86,7 +86,7 @@ const ServicesPage = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className="flex flex-col group space-y-5 text-center align-middle justify-center items-center bg-white py-12 px-7 rounded-2xl border border-gray-100 shadow-md hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-300 transition-all ease-in-out"
+              className="flex flex-col h-full group space-y-5 text-center align-middle justify-center items-center bg-white py-12 px-7 rounded-2xl border border-gray-100 shadow-md hover:-translate-y-1 hover:shadow-lg hover:shadow-cyan-300 transition-all ease-in-out"
             >
               <div
                 className="p-5 flex align-middle justify-center items-center rounded-full"

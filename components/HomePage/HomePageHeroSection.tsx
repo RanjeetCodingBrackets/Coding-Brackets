@@ -37,10 +37,10 @@ const HomePageHeroSection = () => {
             </p>
 
             <div className="flex space-x-7">
-              <button className="px-5 py-3 rounded-xl bg-[#0788A5] text-white font-bold text-xl text-center align-middle items-center hover:text-[#0788A5] hover:bg-transparent hover:ring-1 hover:ring-[#0788A5] transition-all ease-in-out">
+              <button className="px-5 py-3 rounded-xl bg-[#0788A5] text-white font-bold text-xl text-center align-middle items-center hover:text-[#0788A5] hover:bg-[#F5F8FF] hover:ring-1 hover:ring-[#0788A5] transition-all ease-in-out">
                 Request a Free Quote!
               </button>
-              <button className="flex px-5 py-3 rounded-xl bg-[#000333] text-white font-bold text-xl text-center align-middle items-center hover:text-[#000333] hover:bg-transparent hover:ring-1 hover:ring-[#000333] transition-all ease-in-out">
+              <button className="flex px-5 py-3 rounded-xl bg-[#000333] text-white font-bold text-xl text-center align-middle items-center hover:text-[#000333] hover:bg-[#F5F8FF] hover:ring-1 hover:ring-[#000333] transition-all ease-in-out">
                 <BiSolidPhoneCall className="w-8 h-8 mr-3" />{" "}
                 <span>+91 9616782253</span>
               </button>
