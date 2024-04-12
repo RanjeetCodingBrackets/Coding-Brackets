@@ -4,7 +4,6 @@ import CustomerReviewsSection from "@/components/HomePage/CustomerReviews";
 import HomePageHeroSection from "@/components/HomePage/HomePageHeroSection";
 import ServiceFeaturesPage from "@/components/HomePage/ServiceFeatures";
 import ServicesPage from "@/components/HomePage/Services";
-import { redirect } from "next/navigation";
 
 export default function Home() {
   return (
