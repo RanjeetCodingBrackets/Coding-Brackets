@@ -5,7 +5,7 @@ const FAQSection = () => {
   return (
     <section className="container mx-auto">
       <div className="px-20">
-        <div className="flex flex-col space-y-6 w-full justify-center align-middle items-center mb-10">
+        <div className="flex flex-col space-y-6 w-full justify-center align-middle items-center mb-14">
           <h4 className="text-[#FE765D] font-bold text-2xl text-center ">
             Get extra benefits!
           </h4>

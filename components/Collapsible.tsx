@@ -9,7 +9,7 @@ const Collapsible = ({ faq }: { faq: (typeof faqs)[0] }) => {
 
   return (
     <div
-      className={`my-3 border-[#E7E5EA] border rounded-3xl group hover:bg-[#F8FAFC] hover:shadow-md transition-all duration-300 ease-in-out ${
+      className={`my-5 border-[#E7E5EA] border rounded-3xl group hover:bg-[#F8FAFC] hover:shadow-md transition-all duration-300 ease-in-out ${
         isOpen ? "bg-[#F8FAFC]" : "bg-transparent"
       }`}
     >
