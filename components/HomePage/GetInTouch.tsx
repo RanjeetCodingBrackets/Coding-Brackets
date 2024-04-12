@@ -8,11 +8,11 @@ const GetInTouchSection = () => {
         style={{ backgroundImage: "url(/GetInTouchBg.png)" }}
       >
         <h4 className="text-white text-2xl font-extrabold text-center">
-          Let's work with us!
+          Let&apos;s work with us!
         </h4>
 
         <h2 className="text-white font-extrabold text-5xl text-center">
-          Let's Talk About Your Dream Project?
+          Let&apos;s Talk About Your Dream Project?
         </h2>
 
         <p className="text-white text-xl text-center w-[60%] tracking-normal">
