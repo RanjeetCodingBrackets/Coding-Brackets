@@ -11,8 +11,8 @@ const ContactFormSection = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
-  } = useForm<contact>();
+    formState: { errors, isDirty, isSubmitting },
+  } = useForm<contact>({ resolver: zodResolver(contactSchema) });
 
   return (
     <section className="container mx-auto px-16">
@@ -42,6 +42,14 @@ const ContactFormSection = () => {
                 placeholder="Enter Your Name"
                 className="px-4 py-5 rounded-lg placeholder:text-[#B3B3B3] placeholder:text-xl placeholder:font-medium outline-none text-gray-700 text-xl font-medium focus:shadow-lg focus:shadow-gray-600 transition-all ease-in-out"
               />
+              {errors.name && (
+                <p
+                  className="text-white tracking-wide text-sm bg-[#000333] py-1 px-3 w-fit rounded-xl"
+                  style={{ marginTop: "10px" }}
+                >
+                  {errors.name.message}
+                </p>
+              )}
             </div>
 
             <div className="flex flex-col w-full space-y-4">
@@ -55,6 +63,14 @@ const ContactFormSection = () => {
                 placeholder="Enter Your Email Address"
                 className="px-4 py-5 rounded-lg placeholder:text-[#B3B3B3] placeholder:text-xl placeholder:font-medium outline-none text-gray-700 text-xl font-medium focus:shadow-lg focus:shadow-gray-600 transition-all ease-in-out"
               />
+              {errors.email && (
+                <p
+                  className="text-white tracking-wide text-sm bg-[#000333] py-1 px-3 w-fit rounded-xl"
+                  style={{ marginTop: "10px" }}
+                >
+                  {errors.email.message}
+                </p>
+              )}
             </div>
           </div>
 
@@ -65,11 +81,19 @@ const ContactFormSection = () => {
               </label>
               <input
                 {...register("phone")}
-                type="text"
+                type="tel"
                 id="phone"
                 placeholder="Enter Your Phone Number"
                 className="px-4 py-5 rounded-lg placeholder:text-[#B3B3B3] placeholder:text-xl placeholder:font-medium outline-none text-gray-700 text-xl font-medium focus:shadow-lg focus:shadow-gray-600 transition-all ease-in-out"
               />
+              {errors.phone && (
+                <p
+                  className="text-white tracking-wide text-sm bg-[#000333] py-1 px-3 w-fit rounded-xl"
+                  style={{ marginTop: "10px" }}
+                >
+                  {errors.phone.message}
+                </p>
+              )}
             </div>
 
             <div className="flex flex-col w-full space-y-4">
@@ -86,6 +110,14 @@ const ContactFormSection = () => {
                 placeholder="Enter Your Budget"
                 className="px-4 py-5 rounded-lg placeholder:text-[#B3B3B3] placeholder:text-xl placeholder:font-medium outline-none text-gray-700 text-xl font-medium focus:shadow-lg focus:shadow-gray-600 transition-all ease-in-out"
               />
+              {errors.budget && (
+                <p
+                  className="text-white tracking-wide text-sm bg-[#000333] py-1 px-3 w-fit rounded-xl"
+                  style={{ marginTop: "10px" }}
+                >
+                  {errors.budget.message}
+                </p>
+              )}
             </div>
           </div>
 
@@ -110,6 +142,14 @@ const ContactFormSection = () => {
                 Telecom/IT Websites
               </option>
             </select>
+            {errors.services && (
+              <p
+                className="text-white tracking-wide text-sm bg-[#000333] py-1 px-3 w-fit rounded-xl"
+                style={{ marginTop: "10px" }}
+              >
+                {errors.services.message}
+              </p>
+            )}
           </div>
 
           <div className="flex flex-col w-full space-y-4 pt-10">
@@ -123,12 +163,21 @@ const ContactFormSection = () => {
               placeholder="Write Us a Message"
               className="px-4 py-5 rounded-lg placeholder:text-[#B3B3B3] placeholder:text-xl placeholder:font-medium outline-none text-gray-700 text-xl font-medium focus:shadow-lg focus:shadow-gray-600 transition-all ease-in-out"
             />
+            {errors.comment && (
+              <p
+                className="text-white tracking-wide text-sm bg-[#000333] py-1 px-3 w-fit rounded-xl"
+                style={{ marginTop: "10px" }}
+              >
+                {errors.comment.message}
+              </p>
+            )}
           </div>
 
           <div className="pt-10 w-full flex justify-center align-middle items-center">
             <button
+              disabled={isSubmitting}
               type="submit"
-              className="text-[#0788A5] font-bold text-xl items-center align-middle px-7 py-4 rounded-xl bg-white hover:bg-[#0788A5] hover:text-white hover:ring-1 hover:ring-white transition-all ease-in-out"
+              className="text-[#0788A5] font-bold text-xl items-center align-middle px-7 py-4 rounded-xl bg-white hover:bg-[#0788A5] hover:text-white hover:ring-1 hover:ring-white transition-all ease-in-out disabled:cursor-not-allowed"
             >
               Request Proposal
             </button>
